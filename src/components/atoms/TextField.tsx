@@ -20,7 +20,7 @@ export default function TextField(props: TextFieldProps) {
       {isPassword && (
         <span onClick={() => setShowPassword(!showPassword)}>Show</span>
       )}
-      {error && <div>{error}</div>}
+      {error && <div className={styles.error}>{error}</div>}
     </Grid2>
   );
 }

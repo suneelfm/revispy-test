@@ -24,3 +24,10 @@ export interface CustomButtonProps {
   type?: "submit" | "button" | "reset";
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }
+
+export interface OtpFieldProps {
+  label: string;
+  error?: string;
+  onChange?: (e: Record<string, string>) => void;
+  value: Record<string, string>;
+}
