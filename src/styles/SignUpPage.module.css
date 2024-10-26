@@ -5,6 +5,10 @@
   padding-bottom: 20px;
 }
 
+.description {
+  font-size: 16px;
+}
+
 .loginLink {
   font-size: 16px;
   color: #333333;
