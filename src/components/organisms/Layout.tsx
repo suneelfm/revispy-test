@@ -40,7 +40,7 @@ export default function Layout() {
         <Icon name="rightArrow" />
       </Grid2>
       <Grid2 container className={styles.contentDisplay}>
-        <Grid2 size={{ xs: 12, md: 6, lg: 4 }}>
+        <Grid2 size={{ xs: 12, md: 6, lg: 5 }}>
           <Outlet />
         </Grid2>
       </Grid2>
