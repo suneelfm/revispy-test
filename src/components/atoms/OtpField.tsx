@@ -53,7 +53,7 @@ export default function OtpField(props: OtpFieldProps) {
           tabIndex={index + 1}
           onKeyUp={(e: SyntheticEvent) => inputFocus(e)}
           className={styles.otpInput}
-          value={value["key" + (index + 1)]}
+          value={value["key" + (index + 1)] ?? ""}
           onChange={(e) => handleChange(e)}
           maxLength={1}
         />
