@@ -1,4 +1,9 @@
-import { ChangeEventHandler, MouseEventHandler, ReactNode } from "react";
+import {
+  ChangeEventHandler,
+  HTMLInputTypeAttribute,
+  MouseEventHandler,
+  ReactNode,
+} from "react";
 
 export interface IconProps {
   name: string;
@@ -11,6 +16,7 @@ export interface TextFieldProps {
   value: string;
   onChange?: ChangeEventHandler<HTMLInputElement>;
   error?: string;
+  type?: HTMLInputTypeAttribute;
 }
 
 export interface CustomButtonProps {
