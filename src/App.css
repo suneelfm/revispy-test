@@ -7,3 +7,10 @@
   transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   font-size: inherit;
 }
+
+.circularProgress {
+  height: 22px !important;
+  width: 22px !important;
+  color: white !important;
+  margin-right: 15px;
+}

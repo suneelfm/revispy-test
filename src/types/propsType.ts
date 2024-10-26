@@ -23,6 +23,7 @@ export interface CustomButtonProps {
   children: ReactNode;
   type?: "submit" | "button" | "reset";
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  disabled?: boolean;
 }
 
 export interface OtpFieldProps {

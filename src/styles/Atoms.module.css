@@ -36,6 +36,9 @@
   height: 50px;
   border-radius: 6px !important;
 }
+.button:disabled {
+  background-color: #6a6a6a !important;
+}
 
 .otpInput {
   width: 40px !important;
