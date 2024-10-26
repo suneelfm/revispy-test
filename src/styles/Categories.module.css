@@ -1,0 +1,43 @@
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.interestsTitle {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 25px 0 15px 16px;
+}
+
+.checkIcon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.unCheckedIcon {
+  background: #cccccc;
+}
+
+.checkedIcon {
+  background-color: black;
+}
+
+.tickIcon {
+  color: white;
+  font-size: 24px;
+}
+
+.pagination {
+  padding-top: 30px;
+}
