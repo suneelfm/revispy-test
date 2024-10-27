@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:8082";
+const baseURL = "https://revispy-test-server.vercel.app";
 const axiosInstance = axios.create({ baseURL });
 
 export default axiosInstance;
