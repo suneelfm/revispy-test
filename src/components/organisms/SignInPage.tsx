@@ -1,14 +1,23 @@
 import { CircularProgress, Grid2, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/SignInPage.module.css";
 import TextField from "../atoms/TextField";
 import CustomButton from "../atoms/CustomButton";
 import { useSign } from "../../serviceQuery/authQuery";
+import { useNavigate } from "react-router-dom";
 
 export default function SignInPage() {
   const [emailId, setEmailId] = useState("");
   const [password, setPassword] = useState("");
-  const { mutate, isPending } = useSign();
+  const { mutate, isPending, isSuccess, data } = useSign();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (isSuccess && data) {
+      localStorage.setItem("revisPyAuthToken", data?.data?.authToken);
+      navigate("/", { replace: true });
+    }
+  }, [isSuccess, data]);
+
   return (
     <Grid2 container p={5} justifyContent={"center"}>
       <Grid2 size={12} className={styles.title}>
